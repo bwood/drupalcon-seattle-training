@@ -1,0 +1,11 @@
+name: dcon-2019-diving-in-training
+recipe: drupal8
+config:
+  webroot: .
+  php: '7.1'
+  via: nginx
+services:
+  database:
+    type: 'mysql:5.7'
+  appserver:
+    xdebug: true
